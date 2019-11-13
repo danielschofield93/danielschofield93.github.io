@@ -1,13 +1,594 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Daniel Schofield Portfolio</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="node_modules/bulma/css/bulma.min.css">
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
+    <script src='node_modules/typewriter-effect/dist/core.js'></script>
+    <script src="nav_burger_function.js"></script>
+    <script>
 
+    </script>
 </head>
 
-<body>
-    <h1>Hello World</h1>
-    <p>I'm hosted with GitHub Pages.</p>
+<body id="#top">
+    <!-- Header -->
+    <section class="section is-header"
+        style="height: 50px; margin-top: -40px; background-color: white; z-index: 10000;">
+        <nav class="navbar is-fixed-top is-narrow" style="padding: 0px 20px 0px 20px;" role="navigation"
+            aria-label="main navigation">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="#top">
+                    <!--<img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">-->
+                    <b>DJS</b>
+                </a>
+
+                <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
+                    data-target="navbarBasicExample">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+
+            <div id="navbarBasicExample" class="navbar-menu">
+                <div class="navbar-start">
+                </div>
+
+                <div class="navbar-end">
+                    <a class="navbar-item" href="#home">
+                        Home
+                    </a>
+
+                    <a class="navbar-item" href="#about">
+                        About
+                    </a>
+
+                    <a class="navbar-item" href="#work">
+                        Work
+                    </a>
+
+                    <a class="navbar-item" href="#contact">
+                        Contact
+                    </a>
+
+
+                </div>
+                <div class="navbar-item">
+                    <div class="buttons">
+                        <a class="button is-primary">
+                            <strong>Sign up</strong>
+                        </a>
+                        <a class="button is-light">
+                            Log in
+                        </a>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </nav>
+    </section>
+
+    <!-- Hero section -->
+    <section id="home" class="hero is-large" style="border-bottom: 1px solid lightgrey;">
+        <div class="hero-body">
+            <div class="container">
+                <div class="columns is-vcentered">
+                    <div class="column is-half">
+                        <div class="content hello">
+                            <span class="is-size-2">Daniel Schofield</span>
+                            <div class="is-size-2" id="typewriter"></div>
+
+                            <script type="text/javascript">
+                                const typewriter = new Typewriter('#typewriter', {
+                                    loop: false,
+                                    delay: 70,
+                                });
+
+                                typewriter.typeString('I am a <strong>Game Developer</strong>')
+                                    .pauseFor(2000)
+                                    .deleteChars(14)
+                                    .typeString('<strong>Web Developer</strong>')
+                                    .pauseFor(2000)
+                                    .deleteChars(13)
+                                    .typeString('<strong>Designer<strong>')
+                                    .pauseFor(2000)
+                                    .deleteChars(11)
+                                    .typeString('<strong>your next hire!</strong>')
+                                    .start();
+
+                            </script>
+
+                            <br>
+                            <div class="buttons is-spaced">
+                                <a class="button is-size-5 is-light is-family-primary grow" style="margin-right: 30px;"
+                                    href="#contact">
+                                    <span class="is-size-6 has-text-weight-bold">
+                                        Contact Me
+                                    </span>
+                                </a>
+                                <a class="button is-size-5 is-light is-family-primary grow" href="#work">
+                                    <span class="is-size-6 has-text-weight-bold">
+                                        Discover my work
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="hero-img" class="columns">
+                        <div class="column is-one-third ">
+                            <figure class="grow">
+                                <img src="media/game-development-icon.png" alt="Game Developer" class="fade-in one" />
+                            </figure>
+                        </div>
+                        <div class="column is-one-third">
+                            <figure class="grow">
+                                <img src="media/programming-icon.png" alt="Web Developer" class="fade-in two" />
+                            </figure>
+                        </div>
+                        <div class="column is-one-third">
+                            <figure class="grow">
+                                <img src="media/responsive-design-icon.png" alt="Designer" class="fade-in three" />
+                            </figure>
+                        </div>
+                    </div>
+                    <!--<img src="media/browser.png" width="700">-->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--About Me-->
+    <div id="about">
+        <section class="section about-featured is-medium is-primary has-text-centered is-long">
+            <div class="container">
+                <div class="columns is-centered">
+                    <div class="column is-three-fifths">
+                        <h1 class="title has-text-white is-spaced is-size-3-desktop is-size-4-mobile">Hello World, I’m
+                            Daniel.</h1>
+                        <h2 class="subtitle has-text-white is-size-5-desktop">Lorem ipsum dolor sit amet, consectetur
+                            adipiscing
+                            elit.
+                            Phasellus nec iaculis mauris.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Phasellus nec iaculis mauris.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Phasellus nec iaculis mauris.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Phasellus nec iaculis mauris.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Phasellus nec iaculis mauris.</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!--Skills-->
+    <div id="skills">
+        <section class="section skills has-text-centered">
+            <div class="container is-narrow">
+                <div class="box">
+                    <div class="content">
+                        <div class="columns is-centered">
+                            <div class="column">
+                                <figure class="image"><img class="is-skill-icon" src="media/game-development-icon.png">
+                                </figure>
+                                <h1 class="skill-title title is-size-4 is-spaced">Game Developer</h1>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    elit.</p>
+                                <p class="skill-subtitle list-title has-text-weight-normal">Skills:</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    elit.</p>
+                                <p class="skill-subtitle list-title has-text-weight-normal">Software:</p>
+                                <ul>
+                                    <li>Lorem</li>
+                                    <li>Lorem</li>
+                                    <li>Lorem</li>
+                                    <li>Lorem</li>
+                                    <li>Lorem</li>
+                                    <li>Lorem</li>
+                                    <li>Lorem</li>
+                                    <li>Lorem</li>
+                                    <li>Lorem</li>
+                                </ul>
+                            </div>
+                            <div class="column">
+                                <figure class="image"><img class="is-skill-icon" src="media/programming-icon.png">
+                                </figure>
+                                <h1 class="skill-title title is-size-4 is-spaced">Front-end Developer</h1>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    elit.</p>
+                                <p class="skill-subtitle list-title has-text-weight-normal">Skills:</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    elit.</p>
+                                <p class="skill-subtitle list-title has-text-weight-normal">Software:</p>
+                                <ul>
+                                    <li>Lorem</li>
+                                    <li>Lorem</li>
+                                    <li>Lorem</li>
+                                    <li>Lorem</li>
+                                    <li>Lorem</li>
+                                    <li>Lorem</li>
+                                    <li>Lorem</li>
+                                    <li>Lorem</li>
+                                    <li>Lorem</li>
+                                </ul>
+                            </div>
+                            <div class="column" style="border-right: none;">
+                                <figure class="image"><img class="is-skill-icon" src="media/responsive-design-icon.png">
+                                </figure>
+                                <h1 class="skill-title title is-size-4 is-spaced">Designer</h1>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    elit.</p>
+                                <p class="skill-subtitle list-title has-text-weight-normal">Skills:</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    elit.</p>
+                                <p class="skill-subtitle list-title has-text-weight-normal">Software:</p>
+                                <ul>
+                                    <li>Lorem</li>
+                                    <li>Lorem</li>
+                                    <li>Lorem</li>
+                                    <li>Lorem</li>
+                                    <li>Lorem</li>
+                                    <li>Lorem</li>
+                                    <li>Lorem</li>
+                                    <li>Lorem</li>
+                                    <li>Lorem</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Work -->
+    <div id="work">
+        <section class="section has-text-centered">
+            <div class="container">
+                <p class="title section-title is-4">My Recent Work</p>
+                <p class="subtitle section-subtitle is-6" style="padding-bottom: 20px; color:grey ;">Here are a few
+                    recent projects.</p>
+                <div class="columns">
+                    <div class="column is-one-third">
+                        <div class="card project-card">
+                            <div class="card-image">
+                                <figure class="image is-4by3">
+                                    <img src="media/LHS_pc_playFull.png" alt="Placeholder image"
+                                        style="object-fit: cover;">
+                                </figure>
+                            </div>
+                            <div class="card-content">
+                                <div class="media">
+                                    <div class="media-left">
+                                        <figure class="image is-48x48">
+                                            <img src="https://bulma.io/images/placeholders/96x96.png"
+                                                alt="Placeholder image">
+                                        </figure>
+                                    </div>
+                                    <div class="media-content">
+                                        <p class="title section-title is-4">Playconomics</p>
+                                        <p class="subtitle section-subtitle is-6">LionsHeart Studios</p>
+                                    </div>
+                                </div>
+
+                                <div class="content">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Phasellus nec iaculis mauris.
+                                    <br><a href="http://lionsheartstudios.com/playconomics/">Visit Site</a>.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column is-one-third">
+                        <div class="card project-card">
+                            <div class="card-image">
+                                <figure class="image is-4by3">
+                                    <img src="media/LHS_pc_playFull.png" alt="Placeholder image"
+                                        style="object-fit: cover;">
+                                </figure>
+                            </div>
+                            <div class="card-content">
+                                <div class="media">
+                                    <div class="media-left">
+                                        <figure class="image is-48x48">
+                                            <img src="https://bulma.io/images/placeholders/96x96.png"
+                                                alt="Placeholder image">
+                                        </figure>
+                                    </div>
+                                    <div class="media-content">
+                                        <p class="title section-title is-4">Playconomics</p>
+                                        <p class="subtitle section-subtitle is-6">LionsHeart Studios</p>
+                                    </div>
+                                </div>
+
+                                <div class="content">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Phasellus nec iaculis mauris.
+                                    <br><a href="http://lionsheartstudios.com/playconomics/">Visit Site</a>.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column is-one-third">
+                        <div class="card project-card">
+                            <div class="card-image">
+                                <figure class="image is-4by3">
+                                    <img src="media/LHS_pc_playFull.png" alt="Placeholder image"
+                                        style="object-fit: cover;">
+                                </figure>
+                            </div>
+                            <div class="card-content">
+                                <div class="media">
+                                    <div class="media-left">
+                                        <figure class="image is-48x48">
+                                            <img src="https://bulma.io/images/placeholders/96x96.png"
+                                                alt="Placeholder image">
+                                        </figure>
+                                    </div>
+                                    <div class="media-content">
+                                        <p class="title section-title is-4">Playconomics</p>
+                                        <p class="subtitle section-subtitle is-6">LionsHeart Studios</p>
+                                    </div>
+                                </div>
+
+                                <div class="content">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Phasellus nec iaculis mauris.
+                                    <br><a href="http://lionsheartstudios.com/playconomics/">Visit Site</a>.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="columns">
+                    <div class="column is-one-third">
+                        <div class="card project-card">
+                            <div class="card-image">
+                                <figure class="image is-4by3">
+                                    <img src="media/LHS_pc_playFull.png" alt="Placeholder image"
+                                        style="object-fit: cover;">
+                                </figure>
+                            </div>
+                            <div class="card-content">
+                                <div class="media">
+                                    <div class="media-left">
+                                        <figure class="image is-48x48">
+                                            <img src="https://bulma.io/images/placeholders/96x96.png"
+                                                alt="Placeholder image">
+                                        </figure>
+                                    </div>
+                                    <div class="media-content">
+                                        <p class="title section-title is-4">Playconomics</p>
+                                        <p class="subtitle section-subtitle is-6">LionsHeart Studios</p>
+                                    </div>
+                                </div>
+
+                                <div class="content">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Phasellus nec iaculis mauris.
+                                    <br><a href="http://lionsheartstudios.com/playconomics/">Visit Site</a>.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column is-one-third">
+                        <div class="card project-card">
+                            <div class="card-image">
+                                <figure class="image is-4by3">
+                                    <img src="media/LHS_pc_playFull.png" alt="Placeholder image"
+                                        style="object-fit: cover;">
+                                </figure>
+                            </div>
+                            <div class="card-content">
+                                <div class="media">
+                                    <div class="media-left">
+                                        <figure class="image is-48x48">
+                                            <img src="https://bulma.io/images/placeholders/96x96.png"
+                                                alt="Placeholder image">
+                                        </figure>
+                                    </div>
+                                    <div class="media-content">
+                                        <p class="title section-title is-4">Playconomics</p>
+                                        <p class="subtitle section-subtitle is-6">LionsHeart Studios</p>
+                                    </div>
+                                </div>
+
+                                <div class="content">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Phasellus nec iaculis mauris.
+                                    <br><a href="http://lionsheartstudios.com/playconomics/">Visit Site</a>.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column is-one-third">
+                        <div class="card project-card">
+                            <div class="card-image">
+                                <figure class="image is-4by3">
+                                    <img src="media/LHS_pc_playFull.png" alt="Placeholder image"
+                                        style="object-fit: cover;">
+                                </figure>
+                            </div>
+                            <div class="card-content">
+                                <div class="media">
+                                    <div class="media-left">
+                                        <figure class="image is-48x48">
+                                            <img src="https://bulma.io/images/placeholders/96x96.png"
+                                                alt="Placeholder image">
+                                        </figure>
+                                    </div>
+                                    <div class="media-content">
+                                        <p class="title section-title is-4">Playconomics</p>
+                                        <p class="subtitle section-subtitle is-6">LionsHeart Studios</p>
+                                    </div>
+                                </div>
+
+                                <div class="content">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Phasellus nec iaculis mauris.
+                                    <br><a href="http://lionsheartstudios.com/playconomics/">Visit Site</a>.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </section>
+    </div>
+
+    <!-- Contact -->
+    <div id="contact">
+        <section class="section has-text-centered">
+            <div class="container">
+                <p class="title is-4 section-title">Contact Me</h1>
+                    <p class="subtitle is-6 section-subtitle">Drop me a message or check out my resume.</h2>
+                        <div class="columns">
+                            <div class="column">
+                                <div class="contact-form">
+                                    <div class="field">
+                                        <label class="label">Name</label>
+                                        <div class="control">
+                                            <input class="input" type="text">
+                                        </div>
+                                    </div>
+
+                                    <div class="field">
+                                        <label class="label">Subject</label>
+                                        <div class="control">
+                                            <input class="input" type="text">
+                                        </div>
+                                    </div>
+
+                                    <div class="field">
+                                        <label class="label">Email</label>
+                                        <div class="control has-icons-left has-icons-right">
+                                            <input class="input is-danger" type="email">
+                                            <span class="icon is-small is-left">
+                                                <i class="fas fa-envelope"></i>
+                                            </span>
+                                            <span class="icon is-small is-right">
+                                                <i class="fas fa-exclamation-triangle"></i>
+                                            </span>
+                                        </div>
+                                        <p class="help is-danger">This email is invalid</p>
+                                    </div>
+
+                                    <div class="field">
+                                        <label class="label">Message</label>
+                                        <div class="control">
+                                            <textarea class="textarea"></textarea>
+                                        </div>
+                                    </div>
+
+                                    <div class="field is-grouped">
+                                        <div class="control">
+                                            <button class="button is-link"
+                                                style="background-color:blueviolet;">Submit</button>
+                                        </div>
+                                        <div class="control">
+                                            <button class="button is-link is-danger">Cancel</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="contact-form">
+                                    <div class="media">
+                                        <div class="media-left">
+                                            <figure class="image is-48x48">
+                                                <img src="media/person-developer-icon.png" alt="Placeholder image">
+                                            </figure>
+                                        </div>
+                                        <div class="media-content">
+                                            <p class="title is-4">Daniel Schofield</p>
+                                            <span class="icon is-small is-left">
+                                                <i class="fas fa-envelope"></i><span>&nbsp;danielschofield93@gmail.com</span>
+                                            </span>
+
+                                        </div>
+                                    </div>
+                                    <div class="field">
+                                        <div class="control">
+                                                <a class="button is-medium"
+                                                href="https://twitter.com/farleymatters" target="_blank"><span
+                                                    class="icon is-small"><i
+                                                        class="fab fa-twitter fa-fw"></i></span></a>
+                                        </div>
+                                        <div class="control">
+                                                <a class="button is-medium"
+                                                href="https://twitter.com/farleymatters" target="_blank"><span
+                                                    class="icon is-small"><i
+                                                        class="fab fa-twitter fa-fw"></i></span></a>
+                                        </div>
+                                        <div class="control">
+                                                <a class="button is-medium"
+                                                href="https://twitter.com/farleymatters" target="_blank"><span
+                                                    class="icon is-small"><i
+                                                        class="fab fa-twitter fa-fw"></i></span></a>
+                                        </div>
+                                        <div class="control">
+                                                <a class="button is-medium"
+                                                href="https://twitter.com/farleymatters" target="_blank"><span
+                                                    class="icon is-small"><i
+                                                        class="fab fa-twitter fa-fw"></i></span></a>
+                                        </div>
+                                        <div class="control">
+                                                <a class="button is-medium"
+                                                href="https://twitter.com/farleymatters" target="_blank"><span
+                                                    class="icon is-small"><i
+                                                        class="fab fa-twitter fa-fw"></i></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <div class="section" style="color: black;">
+        <div class="container">
+
+            <div class="item columns">
+                <div class="column is-2">
+                </div>
+
+                <div class="column is-8">
+
+                    <div class="level-item" style="color: #0a0a0a;">
+                        Daniel Schofield © 2019
+                    </div>
+                    <div class="level-item">Icons made by&nbsp;
+                        <a href="https://www.flaticon.com/authors/flat-icons" title="Flat Icons">
+                            Flat Icons
+                        </a>
+                        &nbsp;from&nbsp;
+                        <a href="https://www.flaticon.com/" title="Flaticon">
+                            www.flaticon.com
+                        </a>
+                    </div>
+                    <div class="made-by-bulma level-item">
+                        <a href="https://bulma.io">
+                            <img src="https://bulma.io/images/made-with-bulma--black.png" alt="Made with Bulma"
+                                width="163" height="31">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="column is-2">
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- End of Footer -->
+
+
 </body>
 
 </html>

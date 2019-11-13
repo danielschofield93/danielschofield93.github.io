@@ -1,0 +1,238 @@
+h1 h2 h3 h4 h5 p span{
+    color:#4a4a4a !important;
+}
+
+
+
+/* Keyframes for the fade-in */
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+/* Keyframes for the movement */
+@-webkit-keyframes transitionUp 
+{
+    0% { transform: translateY(50px); }
+    100% { transform: translateY(0px); }
+}
+
+@-moz-keyframes transitionUp 
+{
+    0% { transform: translateY(50px); }
+    100% { transform: translateY(0px); }
+}
+
+@keyframes transitionUp 
+{
+    0% { transform: translateY(50px); }
+    100% { transform: translateY(0px); }
+}
+  
+/* Keyframes for the movement */
+@-webkit-keyframes transitionYOnHover 
+{
+    0% { transform: translateY(0px); }
+    100% { transform: translateY(30px); }
+}
+
+@-moz-keyframes transitionYOnHover 
+{
+    0% { transform: translateY(0px); }
+    100% { transform: translateY(30px); }
+}
+
+@keyframes transitionYOnHover 
+{
+    0% { transform: translateY(0px); }
+    100% { transform: translateY(30px); }
+}
+
+.fade-in 
+{
+    opacity:0;
+    opacity: 1 \9; /*just in case ie*/
+    -webkit-animation:fadeIn ease-in 1, transitionUp ease-in 1s;
+    -moz-animation:fadeIn ease-in 1 , transitionUp ease-in 1s;
+    animation:fadeIn ease-in 1, transitionUp ease-in 1s;
+
+    -webkit-animation-fill-mode:forwards;
+    -moz-animation-fill-mode:forwards;
+    animation-fill-mode:forwards;
+
+    -webkit-animation-duration:1s;
+    -moz-animation-duration:1s;
+    animation-duration:1s;
+}
+
+.transition-up:hover
+{
+    -webkit-animation: transitionYOnHover 1s ease-in;
+    animation: transitionYOnHover 1s ease-in;
+}
+
+.fade-in.one 
+{
+    -webkit-animation-delay: 0.5s;
+    -moz-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+}
+  
+.fade-in.two 
+{
+    -webkit-animation-delay: 1s;
+    -moz-animation-delay: 1s;
+    animation-delay: 1s;
+}
+  
+.fade-in.three 
+{
+    -webkit-animation-delay: 1.5s;
+    -moz-animation-delay: 1.5s;
+    animation-delay: 1.5s;
+}
+  
+.grow { transition: all .2s ease-in-out; }
+.grow:hover { transform: scale(1.1); }
+
+.about-featured
+{
+    padding-bottom: 16em !important;
+    background-color: blueviolet;
+}
+
+.static-image
+{
+    margin-left:auto;
+    margin-right: auto;
+    display:block;
+    width:50%;
+
+}
+
+#skills .section
+{
+    margin-top: -14em;
+}
+
+.card
+{
+    background-size:100%;
+    background-color: black;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.card-link
+{
+    position: absolute;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-indent: -9999px;
+    z-index: 1000;
+}
+
+.card-1
+{
+    background-image: url("../media/LHS_pc_playFull.png");
+}
+
+.rounded-thumbnail
+{
+    /*border-radius: 4px;*/
+}
+
+.project-card
+{
+    height: max-content;
+    border-radius: 12px;
+    box-shadow: 0 5px 5px 0 rgba(233,240,243,0.5), 0 0 0 1px #E6ECF8 !important;
+}
+
+.project-thumbnail
+{
+    object-fit:cover;
+}
+
+@media screen and (min-width: 769px)
+{
+    .section.skills .box .content .columns .column 
+    {
+        border-bottom: 0px solid #E6ECF8;
+        border-right: 1px solid #E6ECF8;
+        padding: 60px 35px;
+    }
+}
+
+@media screen and (max-width: 769px) 
+{
+    .section.skills .box .content .columns .column 
+    {
+        border-bottom: 1px solid #E6ECF8;
+        border-right: 0px solid #E6ECF8;
+    }
+}
+
+
+
+@media screen and (max-width: 769px)
+{
+    #hero-img
+    {
+        display: none;
+    }
+}
+
+.box {
+    border-radius: 12px;
+    background-color: #fff;
+    box-shadow: 0 5px 5px 0 rgba(233,240,243,0.5), 0 0 0 1px #E6ECF8;
+    color: #141c3a;
+    display: block;
+    padding: 0px !important;
+}
+
+.section.skills .box .content .columns {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+section.skills .box .content .columns .column ul {
+    list-style: none;
+    margin-left: 0;
+    margin-top: 0;
+}
+
+.skill-title
+{
+    color: blueviolet !important;
+}
+
+.skill-subtitle
+{
+    color: blueviolet;
+    font-weight: bold !important;
+    /*text-decoration: underline;*/
+}
+
+.section-title
+{
+    color:blueviolet !important;
+}
+
+.section-subtitle
+{
+    padding-bottom: 20px; 
+    color:grey !important;
+}
+
+.contact-form
+{
+    border-radius: 12px;
+    background-color: #fff;
+    box-shadow: 0 5px 5px 0 rgba(233,240,243,0.5), 0 0 0 1px #E6ECF8;
+    padding: 1.5rem;
+}
