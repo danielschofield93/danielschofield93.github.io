@@ -123,6 +123,16 @@ h1 h2 h3 h4 h5 p span{
     background-position: center;
 }
 
+.card-content .section-title
+{
+    margin-bottom: 1.5rem;
+}
+
+.card-content .section-subtitle
+{
+    margin-top: -1.25rem;
+}
+
 .card-link
 {
     position: absolute;
@@ -138,6 +148,15 @@ h1 h2 h3 h4 h5 p span{
 .card-1
 {
     background-image: url("../media/LHS_pc_playFull.png");
+}
+
+.work-image
+{
+    padding: 0px 10px !important;
+    width: 100% !important;
+    height: auto !important;
+    margin: auto;
+
 }
 
 .rounded-thumbnail
