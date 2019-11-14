@@ -94,12 +94,6 @@ h1 h2 h3 h4 h5 p span{
 .grow { transition: all .2s ease-in-out; }
 .grow:hover { transform: scale(1.1); }
 
-.about-featured
-{
-    padding-bottom: 16em !important;
-    background-color: blueviolet;
-}
-
 .static-image
 {
     margin-left:auto;
@@ -225,21 +219,14 @@ section.skills .box .content .columns .column ul {
     margin-top: 0;
 }
 
-.skill-title
+.work-title
 {
-    color: blueviolet !important;
+
 }
 
 .skill-subtitle
 {
-    color: blueviolet;
     font-weight: bold !important;
-    /*text-decoration: underline;*/
-}
-
-.section-title
-{
-    color:blueviolet !important;
 }
 
 .section-subtitle
@@ -254,4 +241,9 @@ section.skills .box .content .columns .column ul {
     background-color: #fff;
     box-shadow: 0 5px 5px 0 rgba(233,240,243,0.5), 0 0 0 1px #E6ECF8;
     padding: 1.5rem;
+}
+
+.hidden
+{
+    display: none;
 }

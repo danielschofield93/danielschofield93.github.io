@@ -6,57 +6,85 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Daniel Schofield Portfolio</title>
     <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="node_modules/bulma/css/bulma.min.css">
+    <link rel="stylesheet" href="css/mystyles.css">
     <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
     <script src='node_modules/typewriter-effect/dist/core.js'></script>
-    <script src="nav_burger_function.js"></script>
+    <script src="js/nav_burger_function.js"></script>
+    <script src="js/contact_form_validation.js"></script>
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-152557870-1"></script>
     <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
+    gtag('config', 'UA-152557870-1');
     </script>
 </head>
 
 <body id="#top">
     <!-- Header -->
-    <section class="section is-header"
-        style="height: 50px; margin-top: -40px; background-color: white; z-index: 10000;">
-        <nav class="navbar is-fixed-top is-narrow" style="padding: 0px 20px 0px 20px;" role="navigation"
+    <section class="section is-header" style="height: 50px; margin-top: -40px; background-color: white; z-index: 10000;">
+        <nav class="navbar is-fixed-top header" style="padding: 0px 20px 0px 20px; border-bottom: 1px solid #E6ECF8;" role="navigation"
             aria-label="main navigation">
-            <div class="navbar-brand">
-                <a class="navbar-item" href="#top">
-                    <!--<img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">-->
-                    <b>DJS</b>
-                </a>
-
-                <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
-                    data-target="navbarBasicExample">
-                    <span aria-hidden="true"></span>
-                    <span aria-hidden="true"></span>
-                    <span aria-hidden="true"></span>
-                </a>
-            </div>
-
-            <div id="navbarBasicExample" class="navbar-menu">
-                <div class="navbar-start">
-                </div>
-
-                <div class="navbar-end">
+            <div class="container">
+                <div class="navbar-brand">
                     <a class="navbar-item" href="#top">
-                        Home
+                        <!--<img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">-->
+                        <b>DJS</b>
                     </a>
 
-                    <a class="navbar-item" href="#about">
-                        About
-                    </a>
-
-                    <a class="navbar-item" href="#work">
-                        Work
-                    </a>
-
-                    <a class="navbar-item" href="#contact">
-                        Contact
+                    <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
+                        data-target="navbarBasicExample">
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
                     </a>
                 </div>
-            </div>
+
+                <div id="navbarBasicExample" class="navbar-menu">
+                    <div class="navbar-start">
+                    </div>
+
+                    <div class="navbar-end">
+                        <a class="navbar-item" href="#top">
+                            Home
+                        </a>
+
+                        <a class="navbar-item" href="#about">
+                            About
+                        </a>
+
+                        <a class="navbar-item" href="#work">
+                            Work
+                        </a>
+
+                        <a class="navbar-item" href="#contact">
+                            Contact
+                        </a>
+                        <a class="navbar-item" href="mailto:danielschofield93@gmail.com" rel="noopener noreferrer" target="_blank">
+                                <span class="icon is-small">
+                                    <i class="fas fa-envelope fa-fw"></i>
+                                </span>
+                            </a>
+                            <a class="navbar-item" href="https://docs.google.com/document/d/10xXrgPnjioHt4MHXNBYxsOlrRivPFE2nlWesiDwNdRk/edit?usp=sharing" rel="noopener noreferrer" target="_blank">
+                                <span class="icon is-small">
+                                    <i class="fas fa-file-word"></i>
+                                </span>
+                            </a>
+                            <a class="navbar-item" href="www.linkedin.com/in/danielschofield93" rel="noopener noreferrer" target="_blank">
+                                <span class="icon is-small">
+                                    <i class="fab fa-linkedin fa-fw"></i>
+                                </span>
+                            </a>
+                            <a class="navbar-item" href="https://github.com/danielschofield93" rel="noopener noreferrer" target="_blank">
+                                <span class="icon is-small">
+                                    <i class="fab fa-github fa-fw"></i>
+                                </span>
+                            </a>
+                    </div>
+                </div>
             </div>
         </nav>
     </section>
@@ -132,7 +160,7 @@
 
     <!--About Me-->
     <div id="about">
-        <section class="section about-featured is-medium is-primary has-text-centered is-long">
+        <section class="section about-featured has-background-purple is-medium is-primary has-text-centered is-long">
             <div class="container">
                 <div class="columns is-centered">
                     <div class="column is-three-fifths">
@@ -162,13 +190,13 @@
                             <div class="column">
                                 <figure class="image"><img class="is-skill-icon" src="media/game-development-icon.png">
                                 </figure>
-                                <h1 class="skill-title title is-size-4 is-spaced">Game Developer</h1>
+                                <h1 class="title has-text-purple is-size-4 is-spaced">Game Developer</h1>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing
                                     elit.</p>
-                                <p class="skill-subtitle list-title has-text-weight-normal">Skills:</p>
+                                <p class="skill-subtitle list-title has-text-purple">Skills:</p>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing
                                     elit.</p>
-                                <p class="skill-subtitle list-title has-text-weight-normal">Software:</p>
+                                <p class="skill-subtitle list-title has-text-purple">Software:</p>
                                 <ul>
                                     <li>Lorem</li>
                                     <li>Lorem</li>
@@ -184,13 +212,13 @@
                             <div class="column">
                                 <figure class="image"><img class="is-skill-icon" src="media/programming-icon.png">
                                 </figure>
-                                <h1 class="skill-title title is-size-4 is-spaced">Front-end Developer</h1>
+                                <h1 class="title has-text-purple is-size-4 is-spaced">Front-end Developer</h1>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing
                                     elit.</p>
-                                <p class="skill-subtitle list-title has-text-weight-normal">Skills:</p>
+                                <p class="skill-subtitle list-title has-text-purple">Skills:</p>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing
                                     elit.</p>
-                                <p class="skill-subtitle list-title has-text-weight-normal">Software:</p>
+                                <p class="skill-subtitle list-title has-text-purple">Software:</p>
                                 <ul>
                                     <li>Lorem</li>
                                     <li>Lorem</li>
@@ -206,13 +234,13 @@
                             <div class="column" style="border-right: none;">
                                 <figure class="image"><img class="is-skill-icon" src="media/responsive-design-icon.png">
                                 </figure>
-                                <h1 class="skill-title title is-size-4 is-spaced">Designer</h1>
+                                <h1 class="title has-text-purple is-size-4 is-spaced">Designer</h1>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing
                                     elit.</p>
-                                <p class="skill-subtitle list-title has-text-weight-normal">Skills:</p>
+                                <p class="skill-subtitle list-title has-text-purple">Skills:</p>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing
                                     elit.</p>
-                                <p class="skill-subtitle list-title has-text-weight-normal">Software:</p>
+                                <p class="skill-subtitle list-title has-text-purple">Software:</p>
                                 <ul>
                                     <li>Lorem</li>
                                     <li>Lorem</li>
@@ -236,9 +264,8 @@
     <div id="work">
         <section class="section has-text-centered">
             <div class="container">
-                <p class="title section-title is-4">My Recent Work</p>
-                <p class="subtitle section-subtitle is-6" style="padding-bottom: 20px; color:grey ;">Here are a few
-                    recent projects.</p>
+                <p class="title is-2">My Recent Work</p>
+                <!--<p class="subtitle section-subtitle is-6">Here are a few recent projects.</p>-->
                 <div class="columns">
                     <div class="column is-one-third">
                         <div class="card project-card">
@@ -249,10 +276,9 @@
                             </div>
                             <div class="card-content">
                                 <div>
-                                    <p class="title section-title is-4 is-centered">HTML5 Game</p>
+                                    <p class="title has-text-purple is-4 is-centered">HTML5 Game</p>
                                     <p class="subtitle section-subtitle is-6">Daniel Schofield</p>
                                 </div>
-
 
                                 <div class="content">
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -270,8 +296,10 @@
                             </div>
                             <div class="card-content">
                                 <div>
-                                    <a href="http://lionsheartstudios.com/playconomics/"rel="noopener noreferrer" target="_blank"><p class="title section-title is-4 is-centered">Playconomics</p></a> 
-                                    <p class="subtitle section-subtitle is-6">LionsHeart Studios</p>
+                                    <a href="http://lionsheartstudios.com/playconomics/"rel="noopener noreferrer" target="_blank">
+                                        <p class="title has-text-purple is-4 is-centered">Playconomics</p>
+                                        <p class="subtitle section-subtitle is-6">LionsHeart Studios</p>
+                                    </a> 
                                 </div>
 
                                 <div class="content">
@@ -291,8 +319,10 @@
                             </div>
                             <div class="card-content">
                                 <div>
-                                    <a href="http://lionsheartstudios.com/playmacro" rel="noopener noreferrer" target="_blank"><p class="title section-title is-4 is-centered">PlayMacro</p></a>
-                                    <p class="subtitle section-subtitle is-6">LionsHeart Studios</p>
+                                    <a href="http://lionsheartstudios.com/playmacro" rel="noopener noreferrer" target="_blank">
+                                        <p class="title has-text-purple is-4 is-centered">PlayMacro</p>
+                                        <p class="subtitle section-subtitle is-6">LionsHeart Studios</p>
+                                    </a>
                                 </div>
 
                                 <div class="content">
@@ -314,8 +344,10 @@
                             </div>
                             <div class="card-content">
                                 <div>
-                                    <a href="http://lionsheartstudios.com/playmed/" rel="noopener noreferrer" target="_blank"><p class="title section-title is-4 is-centered">PlayMed</p></a>
-                                    <p class="subtitle section-subtitle is-6">LionsHeart Studios</p>
+                                    <a href="http://lionsheartstudios.com/playmed/" rel="noopener noreferrer" target="_blank">
+                                        <p class="title has-text-purple is-4 is-centered">PlayMed</p>
+                                        <p class="subtitle section-subtitle is-6">LionsHeart Studios</p>
+                                    </a>
                                 </div>
 
                                 <div class="content">
@@ -335,8 +367,10 @@
                             </div>
                             <div class="card-content">
                                 <div>
-                                    <a href="http://lionsheartstudios.com/playtax/" rel="noopener noreferrer" target="_blank"><p class="title section-title is-4 is-centered">PlayTax</p></a>
-                                    <p class="subtitle section-subtitle is-6">LionsHeart Studios</p>
+                                    <a href="http://lionsheartstudios.com/playtax/" rel="noopener noreferrer" target="_blank">
+                                        <p class="title has-text-purple is-4 is-centered">PlayTax</p>
+                                        <p class="subtitle section-subtitle is-6">LionsHeart Studios</p>
+                                    </a>
                                 </div>
 
                                 <div class="content">
@@ -356,8 +390,10 @@
                             </div>
                             <div class="card-content">
                                 <div>
-                                    <a href="http://lionsheartstudios.com/campuslife-2/" rel="noopener noreferrer" target="_blank"><p class="title section-title is-4 is-centered">CampusLife</p></a>
-                                    <p class="subtitle section-subtitle is-6">LionsHeart Studios</p>
+                                    <a href="http://lionsheartstudios.com/campuslife-2/" rel="noopener noreferrer" target="_blank">
+                                        <p class="title has-text-purple is-4 is-centered">CampusLife</p>
+                                        <p class="subtitle section-subtitle is-6">LionsHeart Studios</p>
+                                    </a>
                                 </div>
 
                                 <div class="content">
@@ -378,108 +414,121 @@
     <div id="contact">
         <section class="section has-text-centered">
             <div class="container">
-                <p class="title is-4 section-title">Contact Me</h1>
-                    <p class="subtitle is-6 section-subtitle">Drop me a message or check out my resume.</h2>
-                        <div class="columns">
-                            <div class="column">
-                                <div class="contact-form">
+                <!--<p class="title has-text-purple is-4">Contact Me</h1>
+                <p class="subtitle section-subtitle is-6 ">Drop me a message or check out my resume.</h2>-->
+                <h1 class="title is-2">Want to know more?</h1>
+                <p class="subtitle is-2 has-text-purple">Get in touch!</p>
+                <div class="columns">
+                    <!--<div class="column is-half" style="height:100%">
+                        <div class="contact-form">
+                            <div class="field" style="margin-bottom: 5em;">
+                                <h1 class="title is-2 has-text-left">Want to know more?</h1>
+                                <p class="subtitle is-2 has-text-purple has-text-left">Get in touch!</p>
+                            </div>
+                            <div class="columns" style="margin-bottom: 7.6em;">
+                                <div class="column is-narrow">
+                                    <figure class="image is-128x128" style="width:150px !important">
+                                        <img src="media/person-developer-icon.png" alt="Daniel Schofield"/>
+                                    </figure>
+                                </div>
+                                <div class="column">
                                     <div class="field">
-                                        <label class="label">Name</label>
-                                        <div class="control">
-                                            <input class="input" type="text">
-                                        </div>
-                                    </div>
-
-                                    <div class="field">
-                                        <label class="label">Subject</label>
-                                        <div class="control">
-                                            <input class="input" type="text">
-                                        </div>
-                                    </div>
-
-                                    <div class="field">
-                                        <label class="label">Email</label>
-                                        <div class="control has-icons-left has-icons-right">
-                                            <input class="input is-danger" type="email">
-                                            <span class="icon is-small is-left">
-                                                <i class="fas fa-envelope"></i>
-                                            </span>
-                                            <span class="icon is-small is-right">
-                                                <i class="fas fa-exclamation-triangle"></i>
-                                            </span>
-                                        </div>
-                                        <p class="help is-danger">This email is invalid</p>
-                                    </div>
-
-                                    <div class="field">
-                                        <label class="label">Message</label>
-                                        <div class="control">
-                                            <textarea class="textarea"></textarea>
-                                        </div>
-                                    </div>
-
-                                    <div class="field is-grouped">
-                                        <div class="control">
-                                            <button class="button is-link"
-                                                style="background-color:blueviolet;">Submit</button>
-                                        </div>
-                                        <div class="control">
-                                            <button class="button is-link is-danger">Cancel</button>
-                                        </div>
+                                        <p class="title is-4 has-text-left" style="margin-top: 2em;">Daniel Schofield</p>
+                                        <p class="subtitle section-subtitle is-6 has-text-left">danielschofield93@gmail.com</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="column">
-                                <div class="contact-form">
-                                    <div class="media">
-                                        <div class="media-left">
-                                            <figure class="image is-48x48">
-                                                <img src="media/person-developer-icon.png" alt="Placeholder image">
-                                            </figure>
-                                        </div>
-                                        <div class="media-content">
-                                            <p class="title is-4">Daniel Schofield</p>
-                                            <span class="icon is-small is-left">
-                                                <i class="fas fa-envelope"></i><span>&nbsp;danielschofield93@gmail.com</span>
-                                            </span>
 
-                                        </div>
+                            <div class="container">
+                                <div class="columns is-vcentered" style="height: 2.5em;">
+                                    <div class="column ">
+                                            <a class="button is-size-5 is-light is-family-primary grow" style="padding:0rem 1rem"  href="mailto:danielschofield93@gmail.com" rel="noopener noreferrer" target="_blank">
+                                                <span class="icon is-small">
+                                                    <i class="fas fa-envelope fa-fw"></i>
+                                                </span>
+                                                <label style="cursor: pointer; font-size: 1rem;">Email</label>
+                                            </a>
                                     </div>
-                                    <div class="field">
-                                        <div class="control">
-                                                <a class="button is-medium"
-                                                href="https://twitter.com/farleymatters" target="_blank"><span
-                                                    class="icon is-small"><i
-                                                        class="fab fa-twitter fa-fw"></i></span></a>
-                                        </div>
-                                        <div class="control">
-                                                <a class="button is-medium"
-                                                href="https://twitter.com/farleymatters" target="_blank"><span
-                                                    class="icon is-small"><i
-                                                        class="fab fa-twitter fa-fw"></i></span></a>
-                                        </div>
-                                        <div class="control">
-                                                <a class="button is-medium"
-                                                href="https://twitter.com/farleymatters" target="_blank"><span
-                                                    class="icon is-small"><i
-                                                        class="fab fa-twitter fa-fw"></i></span></a>
-                                        </div>
-                                        <div class="control">
-                                                <a class="button is-medium"
-                                                href="https://twitter.com/farleymatters" target="_blank"><span
-                                                    class="icon is-small"><i
-                                                        class="fab fa-twitter fa-fw"></i></span></a>
-                                        </div>
-                                        <div class="control">
-                                                <a class="button is-medium"
-                                                href="https://twitter.com/farleymatters" target="_blank"><span
-                                                    class="icon is-small"><i
-                                                        class="fab fa-twitter fa-fw"></i></span></a>
-                                        </div>
+                                    <div class="column">
+                                        <a class="button is-size-5 is-light is-family-primary grow" style="padding:0rem 1rem"  href="https://docs.google.com/document/d/10xXrgPnjioHt4MHXNBYxsOlrRivPFE2nlWesiDwNdRk/edit?usp=sharing" rel="noopener noreferrer" target="_blank">
+                                            <span class="icon is-small">
+                                                <i class="fas fa-file-word"></i>
+                                            </span>
+                                            <label style="cursor: pointer; font-size: 1rem;">Resume</label>
+                                        </a>
+                                    </div>
+                                    <div class="column">
+                                        <a class="button is-size-5 is-light is-family-primary grow" style="padding:0rem 1rem"  href="www.linkedin.com/in/danielschofield93" rel="noopener noreferrer" target="_blank">
+                                            <span class="icon is-small">
+                                                <i class="fab fa-linkedin fa-fw"></i>
+                                            </span>
+                                            <label style="cursor: pointer; font-size: 1rem;">LinkedIn</label>
+                                        </a>
+                                    </div>
+                                    <div class="column">
+                                        <a class="button is-size-5 is-light is-family-primary grow" style="padding:0rem 1rem" href="https://github.com/danielschofield93" rel="noopener noreferrer" target="_blank">
+                                            <span class="icon is-small">
+                                                <i class="fab fa-github fa-fw"></i>
+                                            </span>
+                                            <label style="cursor: pointer; font-size: 1rem;">GitHub</label>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                    </div>-->
+                    <div class="column has-text-left">
+                        <form class="contact-form" name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true">
+                            <div class="hidden">
+                                <label>Don’t fill this out if you're human:</label>
+                                <div class="control">
+                                    <input name="bot-field" type="text"/>
+                                </div>
+                            </div>
+                            
+                            <div class="field">
+                                <label class="label">Name</label>
+                                <div class="control">
+                                    <input class="input" type="text">
+                                </div>
+                            </div>
+
+                            <div class="field">
+                                <label class="label">Subject</label>
+                                <div class="control">
+                                    <input class="input" type="text">
+                                </div>
+                            </div>
+
+                            <div class="field">
+                                <label class="label">Email</label>
+                                <div class="control has-icons-left has-icons-right">
+                                    <input id="email-input" class="input" type="email" required>
+                                    <span class="icon is-small is-left">
+                                        <i class="fas fa-envelope"></i>
+                                    </span>
+                                </div>
+                                <p id="email-validation-message" class="help is-danger"></p>
+                            </div>
+
+                            <div class="field">
+                                <label class="label">Message</label>
+                                <div class="control">
+                                    <textarea class="textarea"></textarea>
+                                </div>
+                            </div>
+
+                            <div class="field is-grouped">
+                                <div class="control">
+                                    <button type="submit" onClick="validate()" class="button is-size-5 is-light is-family-primary grow">Submit</button>
+                                </div>
+                                <div class="control">
+                                    <button class="button is-size-5 is-light is-danger">Cancel</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </div>
         </section>
     </div>
@@ -487,13 +536,33 @@
     <!-- Footer -->
     <div class="section" style="color: black;">
         <div class="container">
-
             <div class="item columns">
                 <div class="column is-2">
                 </div>
 
-                <div class="column is-8">
-
+                <div class="column is-8 has-text-centered">
+                    <div class="social-media-section">
+                        <a class="button is-size-5 is-light is-family-primary social-media-footer-button grow" href="mailto:danielschofield93@gmail.com" rel="noopener noreferrer" target="_blank">
+                            <span class="icon is-small">
+                                <i class="fas fa-envelope fa-fw"></i>
+                            </span>
+                        </a>
+                        <a class="button is-size-5 is-light is-family-primary social-media-footer-button grow" href="https://docs.google.com/document/d/10xXrgPnjioHt4MHXNBYxsOlrRivPFE2nlWesiDwNdRk/edit?usp=sharing" rel="noopener noreferrer" target="_blank">
+                            <span class="icon is-small">
+                                <i class="fas fa-file-word"></i>
+                            </span>
+                        </a>
+                        <a class="button is-size-5 is-light is-family-primary social-media-footer-button grow" href="www.linkedin.com/in/danielschofield93" rel="noopener noreferrer" target="_blank">
+                            <span class="icon is-small">
+                                <i class="fab fa-linkedin fa-fw"></i>
+                            </span>
+                        </a>
+                        <a class="button is-size-5 is-light is-family-primary social-media-footer-button grow" href="https://github.com/danielschofield93" rel="noopener noreferrer" target="_blank">
+                            <span class="icon is-small">
+                                <i class="fab fa-github fa-fw"></i>
+                            </span>
+                        </a>
+                    </div>
                     <div class="level-item" style="color: #0a0a0a;">
                         Daniel Schofield © 2019
                     </div>
