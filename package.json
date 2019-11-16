@@ -4,5 +4,10 @@
         "css-build": "node-sass --omit-source-map-url sass/mystyles.scss css/mystyles.css",
         "css-watch": "npm run css-build -- --watch",
         "start": "npm run css-watch"
+        
+    },
+    "devDependencies": 
+    {
+        "node-sass": "4.5.0"
     }
 }
